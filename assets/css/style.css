@@ -71,6 +71,21 @@ body figure {
   display: flex;
 }
 
+body figure h2 {
+  margin: 0px;
+  font-family: "Raleway", sans-serif;
+  color: var(--secondary);
+  font-size: 24px;
+  margin: auto 20px 20px auto;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 15px 10px var(--bg);
+}
+
 footer {
   font-family: "Open Sans", sans-serif;
   color: var(--secondary);
