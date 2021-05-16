@@ -22,10 +22,10 @@ header {
   box-shadow: 0px 0px 15px 10px var(--bg);
 }
 
-header h1 {
+header > h1 {
   font-family: "Raleway", sans-serif;
   font-size: 28px;
-  color var(--primary);
+  color: var(--primary);
   margin: 0px;
   padding: 10px 20px;
 }
@@ -34,7 +34,7 @@ nav {
   margin-left: auto;
 }
 
-nav ul {
+nav > ul {
   display: flex;
   flex-direction: row;
   margin: 0px;
@@ -42,25 +42,25 @@ nav ul {
   list-style: none;
 }
 
-nav ul li {
+nav > ul > li {
   padding: 10px 20px;
 }
 
-nav ul li a {
+nav > ul > li > a {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
+  color: var(--secondary);
   text-decoration: none;
-  transition: color 0.5s ease-in-out;
-  text-shadow: 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
 }
 
-nav ul li a:hover {
-  color: var(--primary)
+nav > ul > li > a:hover {
+  color: var(--primary);
   text-shadow: 0px 0px 5px var(--secondary);
 }
 
-body figure {
-  background-image: url(../images/bg.jpg);
+body > figure {
+  background-image: url("../images/bg3.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -71,7 +71,7 @@ body figure {
   display: flex;
 }
 
-body figure h2 {
+body > figure > h2 {
   margin: 0px;
   font-family: "Raleway", sans-serif;
   color: var(--secondary);
@@ -86,29 +86,30 @@ main {
   box-shadow: 0px 0px 15px 10px var(--bg);
 }
 
-main section {
+main > section {
   display: flex;
   flex-direction: row;
   margin: 20px 0px;
 }
 
-main section aside {
+main > section > aside {
   width: 100%;
   max-width: 10%;
   border-right: 5px solid var(--secondary);
+  flex: 1 0;
 }
 
-main section aside h3 {
+main > section > aside > h3 {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   color: var(--primary);
   writing-mode: vertical-rl;
   letter-spacing: 5px;
   margin: 0px 10px 0px auto;
-  text-transform: capitalize;
+  text-transform: lowercase;
 }
 
-main section article {
+main > section > article {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -119,14 +120,14 @@ main section article {
   gap: 20px;
 }
 
-main section article p {
+main > section > article > p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: var(--secondary);
   margin: 0px;
 }
 
-main section article figure {
+main > section > article > figure {
   position: relative;
   border: 1px solid var(--secondary);
   border-left: 3px solid var(--secondary);
@@ -170,6 +171,57 @@ main > section > article > figure > h4 {
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   transform-origin: left;
+}
+
+main > section > article > figure:hover {
+  filter: none;
+}
+
+main > section > article > figure:hover > h4 {
+  text-shadow: 0px 0px 10px var(--bg);
+  transform: scale(1, 1);
+  visibility: visible;
+}
+
+#project1 {
+  background-image: linear-gradient(
+    135deg,
+    rgba(17, 155, 58, 0.5),
+    transparent
+  );
+}
+
+#project2 {
+  background-image: linear-gradient(
+    135deg,
+    rgba(139, 112, 36, 0.5),
+    transparent
+  );
+}
+
+#project3 {
+  background-image: linear-gradient(
+    135deg,
+    rgba(36, 139, 105, 0.5),
+    transparent
+  );
+}
+
+#project4 {
+  background-image: linear-gradient(
+    135deg,
+    rgba(139, 74, 36, 0.5),
+    transparent
+  );
+}
+
+#project5 {
+  background-image: linear-gradient(
+    135deg,
+    rgba(36, 69, 139, 0.5),
+    transparent
+  );
+}
 
 footer {
   font-family: "Open Sans", sans-serif;
@@ -179,7 +231,6 @@ footer {
   font-weight: bold;
   position: relative;
 }
-
 
 @media (max-width: 1024px) {
   main > section > article {
