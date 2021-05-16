@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  background-image: url("../images/wrapper.jpg");
+  flex-wrap: wrap;
+}
+
+header h1 {
+  color: rgb(116, 209, 116);
+}
+
+#wrapper {
+}
+
+.logo nav ul li:hover {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+
+footer {
+}
+
+.box1 {
+}
+
+.box2 {
+}
+
+.box3 {
+}
+
+.box4 {
+}
