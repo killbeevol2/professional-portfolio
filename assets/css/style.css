@@ -30,6 +30,11 @@ header h1 {
   padding: 10px 20px;
 }
 
+h4 {
+  position: absolute;
+  z-index: 10;
+}
+
 nav {
   margin-left: auto;
 }

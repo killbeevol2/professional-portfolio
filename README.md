@@ -15,4 +15,5 @@ Created a fully functional portfolio with place holders to act as a wireframe fo
 
 ## Link
 
-[Deploy Link](https://killbeevol2.github.io/professional-portfolio/)
+[GitHub](https://github.com/killbeevol2)(br)
+[Deploy Link](https://killbeevol2.github.io/javascript-quiz/)
